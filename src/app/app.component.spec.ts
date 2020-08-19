@@ -1,7 +1,7 @@
 import { TestBed, async } from '@angular/core/testing';
 import { RouterTestingModule } from '@angular/router/testing';
 import { AppComponent } from './app.component';
-import { YoMamaJoke } from './yo-mama-joke';
+import { YoMamaJoke } from './class/yo-mama-joke';
 import { MockJokeService } from './service/yo-mama-joke.service';
 
 describe('AppComponent', () => {

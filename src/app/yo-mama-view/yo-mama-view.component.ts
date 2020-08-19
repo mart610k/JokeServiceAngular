@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { MockJokeService } from "../service/yo-mama-joke.service";
-import { YoMamaJoke } from '../yo-mama-joke';
+import { YoMamaJoke } from '../class/yo-mama-joke';
 
 @Component({
   selector: 'app-yo-mama-view',

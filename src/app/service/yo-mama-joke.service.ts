@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from "@angular/common/http";
 
-import { YoMamaJoke } from '../yo-mama-joke';
+import { YoMamaJoke } from '../class/yo-mama-joke';
 
 @Injectable({
   providedIn: 'root'
