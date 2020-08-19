@@ -1,2 +1,5 @@
-export class AbstractJoke {
+export abstract class AbstractJoke {
+
+
+    abstract getJoke() : string
 }
