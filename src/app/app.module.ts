@@ -4,10 +4,12 @@ import { HttpClientModule } from "@angular/common/http";
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { YoMamaViewComponent } from './yo-mama-view/yo-mama-view.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    YoMamaViewComponent
   ],
   imports: [
     BrowserModule,
