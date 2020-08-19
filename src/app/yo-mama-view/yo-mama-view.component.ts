@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { MockJokeService } from "../service/yo-mama-joke.service";
+
 import { YoMamaJoke } from '../class/yo-mama-joke';
+import { AbstractJoke } from '../class/abstract-joke';
+import { AbstractJokeService } from '../service/abstract-joke.service';
 
 @Component({
   selector: 'app-yo-mama-view',
@@ -8,9 +10,9 @@ import { YoMamaJoke } from '../class/yo-mama-joke';
   styleUrls: ['./yo-mama-view.component.css']
 })
 export class YoMamaViewComponent implements OnInit {
-  joke : YoMamaJoke = new YoMamaJoke("Yo Mama is so slow she waits for the clock to go around again");
-  constructor(private jokeservice : MockJokeService  ) {
-
+  joke : AbstractJoke = new YoMamaJoke("Yo Mama is so slow she waits for the clock to go around again");
+  constructor(private jokeservice : AbstractJokeService  ) {
+    
     this.data();
    }
   
