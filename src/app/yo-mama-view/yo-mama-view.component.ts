@@ -8,15 +8,15 @@ import { YoMamaJoke } from '../yo-mama-joke';
   styleUrls: ['./yo-mama-view.component.css']
 })
 export class YoMamaViewComponent implements OnInit {
-
+  joke : YoMamaJoke = new YoMamaJoke("Yo Mama is so slow she waits for the clock to go around again");
   constructor(private jokeservice : MockJokeService  ) {
 
     this.data();
    }
-  joke : YoMamaJoke;
+  
   ngOnInit(): void {
 
-    this.data();
+   
   }
   async data() {
     this.joke = await this.jokeservice.getJoke();
