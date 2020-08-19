@@ -11,16 +11,16 @@ import { AbstractJokeService } from '../service/abstract-joke.service';
 })
 export class YoMamaViewComponent implements OnInit {
   joke : AbstractJoke = new YoMamaJoke("Yo Mama is so slow she waits for the clock to go around again");
-  constructor(private jokeservice : AbstractJokeService  ) {
+  constructor(private jokeservice : AbstractJokeService) {
     
-    this.data();
+    this.getNewJoke();
    }
   
   ngOnInit(): void {
 
    
   }
-  async data() {
+  async getNewJoke() {
     this.joke = await this.jokeservice.getJoke();
   }
 
