@@ -24,4 +24,8 @@ export class YoMamaViewComponent implements OnInit {
     this.joke = await this.jokeservice.getJoke();
   }
 
+  changeJokeService(){
+    
+  }
+
 }
