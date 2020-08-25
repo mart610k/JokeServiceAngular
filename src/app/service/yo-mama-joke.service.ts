@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { HttpClient } from "@angular/common/http";
+import { HttpClient } from '@angular/common/http';
 
 import { YoMamaJoke } from '../class/yo-mama-joke';
 import { AbstractJoke } from '../class/abstract-joke';
@@ -16,7 +16,8 @@ export class YoMamaJokeService extends AbstractJokeService {
   async getJoke() : Promise<AbstractJoke>{
     
     let mama : AbstractJoke;
-
+    //let headersInfo = {headers :{"Test":"Test"}}
+    
     await this._http.get<YoMamaJoke>("http://localhost:3000").toPromise()
     .then(result =>
       {

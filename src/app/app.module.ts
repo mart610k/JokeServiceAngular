@@ -4,26 +4,20 @@ import { HttpClientModule } from "@angular/common/http";
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { YoMamaViewComponent } from './yo-mama-view/yo-mama-view.component';
-import { AbstractJokeService } from './service/abstract-joke.service';
-import { YoMamaJokeService } from "./service/yo-mama-joke.service";
+import { JokeViewComponent } from './joke-view/joke-view.component';
+import { JokeService } from './service/joke-service';
 
 @NgModule({
   declarations: [
     AppComponent,
-    YoMamaViewComponent
+    JokeViewComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule
   ],
-  providers: [
-    {
-      provide: AbstractJokeService,
-      useClass: YoMamaJokeService
-    }
-  ],
+  providers: [ JokeService ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

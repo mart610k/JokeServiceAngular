@@ -10,5 +10,5 @@ export abstract class AbstractJokeService {
   constructor() { }
 
   abstract async getJoke() : Promise<AbstractJoke>
-  
+
 }

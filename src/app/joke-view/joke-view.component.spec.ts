@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { YoMamaViewComponent } from './yo-mama-view.component';
+import { JokeViewComponent } from './Joke-view.component';
 
 describe('YoMamaViewComponent', () => {
-  let component: YoMamaViewComponent;
-  let fixture: ComponentFixture<YoMamaViewComponent>;
+  let component: JokeViewComponent;
+  let fixture: ComponentFixture<JokeViewComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ YoMamaViewComponent ]
+      declarations: [ JokeViewComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(YoMamaViewComponent);
+    fixture = TestBed.createComponent(JokeViewComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

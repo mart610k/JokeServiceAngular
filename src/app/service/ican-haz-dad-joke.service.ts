@@ -23,7 +23,6 @@ export class ICanHazDadJokeService extends AbstractJokeService {
       .toPromise()
       .then(result =>
       {
-        console.log(result);
         dadjoke = new ICanHazDadJoke(result.joke);
       });
     return dadjoke;
